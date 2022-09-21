@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap");
+.btn,
+.jumbotron,
+.nav :hover {
+   border-radius: 0px;
+}
+body {
+   background: #f3f4f7;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Raleway", sans-serif;
+   overflow-x: hidden;
+}
+.container-fluid {
+   padding: 0px !important;
+}
+
+.bg-nav,
+.bg-footer {
+   background-color: #0a8ea0;
+}
+
+footer {
+   display: flex;
+   align-items: center;
+   height: 110px;
+}
+.nav-link {
+   font-size: 0.9rem !important;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   outline: none;
+   border: none !important;
+   margin: 0px 20px;
+   transition: ease-in-out all 300ms;
+}
+
+.btn {
+   transition: ease-in-out all 300ms !important;
+}
+.admin-link {
+   color: #000000;
+}
+.admin-nav .list-group .list-group-item:hover {
+   background-color: #30c39e !important;
+   transition: ease-in-out all 300ms !important;
+}
+.admin-nav .list-group .list-group-item:hover .admin-link {
+   color: #f3f4f7;
+}
+.navbar h3 {
+   position: relative;
+   left: -40px;
+   top: 0px;
+   margin: 7px 0px;
+   font-size: 1.5rem;
+}
+nav {
+   position: sticky !important;
+   top: 0px !important;
+   z-index: 10;
+   transition: all 200ms ease-in-out;
+   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3);
+}
+nav .navbar-brand img {
+   height: 25px !important;
+   position: relative;
+   top: 7px;
+}
+
+.card {
+   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3);
+   font-family: "Roboto", sans-serif;
+}
+.btn {
+   font-family: "Roboto", sans-serif;
+   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.home .card {
+   margin: auto;
+   max-width: 300px;
+}
+.cartProducts .card {
+   margin: auto;
+   max-width: 280px;
+   margin-bottom: 10px;
+   box-shadow: none;
+   border: none;
+}
+
+.cartProducts .cartEmpty .card {
+   max-width: 100%;
+}
+.brainTreeDropIn {
+   z-index: -1;
+}
