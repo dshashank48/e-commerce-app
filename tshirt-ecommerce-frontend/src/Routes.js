@@ -14,6 +14,8 @@ import ManageProducts from "./admin/ManageProducts";
 import UpdateProduct from "./admin/UpdateProduct";
 import UpdateCategory from "./admin/UpdateCategory";
 import Cart from "./core/Cart";
+import { Orders } from "./views";
+
 const Routes = () => {
    return (
       <Router>
@@ -47,6 +49,7 @@ const Routes = () => {
                exact
                component={AddProduct}
             />
+            <AdminRoute path="/admin/orders" exact component={Orders} />
             <AdminRoute
                path="/admin/products"
                exact
@@ -57,11 +60,7 @@ const Routes = () => {
                exact
                component={UpdateProduct}
             />
-            <PrivateRoute
-               path="/user/dashboard"
-               exact
-               component={UserDashboard}
-            />
+            <PrivateRoute path="/user/dashboard" exact component={Orders} />
          </Switch>
       </Router>
    );

@@ -1,4 +1,3 @@
-import React from "react";
 import { API } from "../backend";
 
 export const getMeToken = (userId, token) => {

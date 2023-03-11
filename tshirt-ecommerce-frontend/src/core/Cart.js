@@ -57,7 +57,7 @@ const Cart = () => {
       }
       return (
          <p className="text-success my-1">
-            <b> Total amount to be paid {amount} $</b>
+            <b> Total amount to be paid {amount} Rs</b>
          </p>
       );
    };
@@ -66,12 +66,11 @@ const Cart = () => {
          <div className="card py-4 mb-4">
             <span className="mb-3">
                <h3>
-                  Checkout <span>✔</span>
+                  Checkout with BrainTree <span>✔</span>
                </h3>
             </span>
             {products && products.length > 0 ? showTotalAmount() : ""}
             <BrainTreePayment products={products} setReload={setReload} />
-            <StripeCheckout products={products} setReload={setReload} />
          </div>
       );
    };
@@ -105,3 +104,5 @@ const Cart = () => {
 };
 
 export default Cart;
+
+// <StripeCheckout products={products} setReload={setReload} />

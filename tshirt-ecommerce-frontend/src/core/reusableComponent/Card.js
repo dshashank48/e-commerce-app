@@ -68,12 +68,12 @@ const Card = ({
             <h5 className="card-title">{cardTitle} </h5>
             <p className="mt-1 text-wrap">{cardDescription}</p>
             <div className="row">
-               <div className="col-5 ">
+               <div className="col-6">
                   <p className="text-success mt-2">
-                     <b>Price: ${cardPrice}</b>
+                     <b>Price: {cardPrice} Rs</b>
                   </p>
                </div>
-               <div className="col-7 text-right">
+               <div className="col-6 text-right">
                   {showAddToCart(addToCart)}
                   {showRemoveFromCart(removeFromCart)}
                </div>
